@@ -16,7 +16,7 @@ namespace ConsoleApplication1
 		static void Main(string[] args)
 		{
 			Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\smils");
-			var fixer1 = new FtpSmilFixer("encvweb.upload.akamai.com", new NetworkCredential("encvweb-dev", "OfCl9FHj9zMl6ZXo9KLX"));
+			var fixer1 = new FtpSmilFixer("", new NetworkCredential("", ""));
 
 			//var mfst = fixer1.GetVideosFromManifestAsync("/187855/dev/v3/smil/AG1245678911/ag1245678911.smil");
 			var t = fixer1.ReadDirs("/187855/dev/v3/smil");
